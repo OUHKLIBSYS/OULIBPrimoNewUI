@@ -1,0 +1,320 @@
+prm-logo .product-logo {
+    display:none
+}
+
+prm-topbar {
+    height: 70px;
+}
+
+prm-search-bookmark-filter {
+    margin-right: .2em;
+}
+    
+#oubackwcm {
+    margin-right: .2em;
+}
+
+#oubrecbtn{
+	display: flex;
+}
+
+prm-user-area md-fab-toolbar {
+    width: 60%;
+}
+
+#instituteLogo {
+    position: absolute;
+    left: 0px !important;
+    top: 0px !important;
+    height: 100%;
+}
+
+#libraryLogo {
+    position: absolute;
+    left: 175px !important;
+    top: 0px !important;
+    height: 100%;
+}
+
+#instituteLogoSM {
+    position: absolute;
+    left: 0px !important;
+    top: 0px !important;
+    height: 100%;
+}
+
+#libraryLogoSM {
+    position: absolute;
+    left: 175px !important;
+    top: 0px !important;
+    height: 50%;
+}
+
+#backtolibLogoSM {
+    position: absolute;
+    left: 175px !important;   
+    top: 35px !important;
+    height: 50%;
+}
+
+#ouhkhideic {
+	display:none;
+}
+
+#ouhkhideic2 {
+	display:none;
+}
+
+
+/*ITU Combine*/	/*Change borrower record font coor*/
+span[translate="nui.menu.librarycard"]{
+	color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;	
+}
+
+/*LIB - Change the color to red to the non-available item*/
+.duedate>span:first-of-type, .prm-negative, .restricted>span:first-of-type, .status-unavailable, [class*=no_]>span:first-of-type, [class*=unavailable]>span:first-of-type{
+        color: #ff0000;
+}
+
+
+/*LIB - Change the color to orange to the citation available items*/
+[class*=citation_available]>span:first-of-type {
+    color: #ffa500;
+}
+
+/*LIB - Change fine's color to red*/
+p[ng-if="::fine.firstLineRight"] { 
+     color: #ff0000
+}
+
+/*LIB - Change total fine's color to red*/
+em[translate="nui.fines.balance"] { 
+     color: #ff0000
+}
+span[translate="nui.fines.balance"] { 
+     color: #ff0000
+}
+
+/*LIB - Change color of selected items*/
+.md-autocomplete-suggestions .suggestion-scope, .prm-primary-color, .result-item-actions .custom-button, .result-item-actions .more-options-button, md-tab-content .tab-content-header md-input-container md-select-value .md-text, md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-active:not([disabled]), md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-focused:not([disabled]), prm-add-query-to-saved-searches .custom-button{
+    color: #0075b0;
+}
+
+/*LIB - Reposition citiation disclaimer*/
+citationDisclaimer{
+    position: relative;
+    background-color: #ECF0F3;
+    color: #0075b0;
+    font-size: 85%;
+    text-align: left;
+    padding: 0.5em;
+    margin-top: 0.2em;
+    border: 2px solid #e1e1e1;
+}
+
+/*LIB - Change the color of the text for successfuly copy citation*/
+span[translate="nui.citation.message.success"] { 
+	color: #0f7d00;
+	font-size: small;
+}
+
+/*LIB - Change the color of the text for successfuly copy permanent link*/
+span[translate="nui.permalink.message.success"] { 
+	color: #0f7d00;
+	font-size: small;
+}
+
+/*LIB - Change User area's color*/
+prm-user-area .user-menu-button .user-name {
+    text-transform: none;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    max-width: 150px;
+}
+
+
+/*LIB - Change advanced search font color*/
+span[translate="label.advanced_search"] {
+	color: white
+}
+
+/*LIB - Change main menu font color*/
+prm-main-menu{
+    -webkit-text-fill-color: black;
+}
+
+
+/*Change sign-in font color*/
+span[translate="eshelf.signin.title"]{
+	color: black;
+}
+
+/*LIB - Change sign-out font color*/
+span[translate="eshelf.signout.title.link"]{
+	color: black;
+}
+
+/*LIB - Change user area language font color*/
+span.user-language {
+    color: black;
+}
+
+/*LIB - Change user area language font color (2)*/
+md-select[ng-change="ctrl.changeLanguage()"]{
+    color: black;
+}
+
+
+/*LIB - Change Borrower Record, Signout, Advanced Search icon and font color*/
+button.button-with-icon.zero-margin.md-button.md-primoExplore-theme.md-ink-ripple{
+    color:black;
+}
+
+/*LIB - Change language icon and font color*/
+md-input-container.md-primoExplore-theme.layout-align-center-center.layout-row.md-input-has-value {
+    color: black;
+    -webkit-text-fill-color: black;
+}
+
+/*LIB - Change default menu text font color*/
+.item-content{
+    color: black;
+}
+._md-text{
+    color: black;
+}
+
+/*LIB - Change default icon color*/
+prm-icon{
+    color:black;
+}
+._md-select-icon{
+    color:black;
+}
+
+/*LIB - Change default icon color (on mouse over)*/
+prm-icon:hover{
+    color:#53738c;
+}
+
+/*LIB - Change background color of the mouse over menu*/
+md-fab-actions.md-toolbar-tools.zero-padding.buttons-group {
+    background-color: white;
+}
+
+/*LIB - Change the default button color*/
+button{
+   color:black;
+}
+
+/*LIB - Change the default button color (on mouse over)*/
+button:hover{
+    color:#53738c;
+}
+
+
+/*LIB - Change search result content background color*/
+md-content, md-content.md-primoExplore-theme {
+    background-color: transparent;
+    box-shadow: 0 0 0 0 #f1c16f;
+    background-color: white;
+}
+
+/*LIB - Change the default background color*/
+.prm-background, body {
+    background-color: #ffffff;
+    border-color: #000000;
+}
+
+
+/*LIB - Change topbar background color*/
+.prm-primary-bg.prm-hue1, prm-search-bar.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar {
+    background-color: #ffffff;
+}
+
+/*LIB - Change the advanced search bar background color*/
+prm-search-bar .search-wrapper {
+    z-index: 11;
+    background: rgba(0, 0, 0, 0);
+}
+
+/*LIB - Change the advaced search bar background color(2)*/
+prm-search-bar .advanced-search-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: z-index 0s .3s,opacity .3s ease;
+}
+
+/*LIB - Change e-shelf background color (1)*/
+prm-favorites > div > div.flex-xl-10.flex-md-0.flex-lg-5.flex-0 {
+    background-color: white;
+}
+
+/*LIB - Change e-shelf background color (2)*/
+prm-favorites > div > div.flex-xl-20.flex-md-0.flex-lg-10.flex-0 {
+    background-color: white;
+}
+
+
+/*LIB - hide no search result content*/
+md-card-content ul{
+    display: none;
+}
+md-card-content p{
+    display: none;
+}
+
+/*LIB - Change did you mean box background color*/
+md-card.default-card.padded-container-medium.zero-margin._md.md-primoExplore-theme {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*LIB - Hide up the "request" service*/
+prm-request-services {
+    display: none;
+}
+
+/*LIB - narrow facet line space*/
+.md-chip.animate-opacity-and-scale.facet-element-marker-library {
+    height: 22px;
+}
+.md-chip.animate-opacity-and-scale.facet-element-marker-domain{
+	height: 22px;
+}
+.md-chip.animate-opacity-and-scale.facet-element-marker-topic {
+	height: 22px;
+}
+.md-chip.animate-opacity-and-scale.facet-element-marker-creator{
+	height: 22px;
+}
+.md-chip.animate-opacity-and-scale.facet-element-marker-rtype {
+	height: 22px;
+}
+.md-chip.animate-opacity-and-scale.facet-element-marker-lang {
+	height: 22px;
+}
+.md-chip.animate-opacity-and-scale.facet-element-marker-lcc {
+	height: 22px;
+}
+.md-chip.animate-opacity-and-scale.facet-element-marker-tlevel {
+	height: 22px;
+}
+
+/*LIB - make font size of location tab smaller */
+[ng-if~=itemFields]{
+	font-size: small;
+}
+
+/*LIB - hide up the request form for the problematic chinese display*/
+div > md-content > prm-request > div.form-focus.service-form.layout-margin.layout-row > div.service-form-static-panel.zero-margin.layout-padding.layout-column.flex > form{
+	display:none;
+}

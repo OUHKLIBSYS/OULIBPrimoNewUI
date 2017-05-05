@@ -1,0 +1,13 @@
+/*ITU Combine*/
+@media (min-width: 750px) and (max-width: 959px) {
+	span[translate="nui.menu.librarycard"]{
+		max-width: 140px;	
+	}
+}
+
+/*ITU Combine*/
+@media (min-width: 600px) and (max-width: 749px) {
+	span[translate="nui.menu.librarycard"]{
+		max-width: 90px;	
+	}
+}
